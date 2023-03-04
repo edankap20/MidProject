@@ -89,3 +89,14 @@ header section {
         color: white;
     }
 }
+
+.contactUs {
+    width: 150px;
+    height: 52px;
+    background-color: var(--dark-blue, blue);
+    border: none
+}
+.contactUs a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
