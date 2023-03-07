@@ -46,12 +46,12 @@ header section {
 
     
 /* No lo coge*/
-    button .open-menu {
-        color:rgba(7,42,200) !important;
+    .open-menu i::before {
+        color:rgba(7,42,200);
     }
 /* No lo coge*/
-    button .close-menu {
-        color: white !important;
+    .close-menu i::before {
+        color: white;
     }
 
     .nav {
@@ -71,6 +71,8 @@ header section {
         box-shadow: 0 0 0 100vmax rgba(7,42,200, 0.3)
     }
 
+
+
     .contactUs {
         display: none
     }
@@ -78,6 +80,7 @@ header section {
     .nav.visible {
         opacity: 1;
         visibility: visible;
+        z-index: 10;
     }
 
     .menu {
@@ -96,11 +99,6 @@ header section {
         flex-direction: column;
         padding: 3rem 3rem 3rem;
         background-color: pink;
-    }
-
-    .contentHeroSection {
-        background-color: rgb(67, 119, 153);
-   
     }
 
     .contentHeroSection h1{
@@ -287,6 +285,90 @@ header section {
     .vectorifyStructure p {
         font-size: 15px;
     }
+
+
+
+
+
+    #testimonialSection {
+        background-color: var(--dark-grey);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+
+        height: 300px;
+
+        background-image: url("/Assets/TestimonialsSecction/orbit.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #testimonialSection section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #testimonialSection section h2 {
+        font-size: 25px;
+        text-align: center;
+        line-height: normal;
+        color: var(--light-grey1);
+    }
+
+    #testimonialSection .testimonialComment p {
+        color: var(--yellow);
+        font-size: 14px
+    }
+
+    #testimonialSection .testimonialComment {
+        justify-content: center;
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    .clientPicture {
+        max-width: 15%;
+        border-radius: 70%;
+    }
+ 
+    .clientInformation {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem
+    }
+    .kristinInformation {
+        display: flex;
+        flex-direction: column;
+    }
+    .clientInformation h7 {
+        font-weight: 500;
+        font-size: 13px;
+        color:#A2D6F9
+    }
+    .clientInformation h8 {
+        font-weight: 400;
+        font-size: 10px;
+        color: white;
+    }
+
+
+.emoji {
+        height: 60px;
+        width: 60px;
+    }
+    
+    .contentTestimonial {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
 
 }
 
