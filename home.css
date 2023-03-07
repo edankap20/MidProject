@@ -265,6 +265,28 @@ header section {
     .dashCoinStructure {
         padding: 1rem;
     }
+    .dashCoinStructure p {
+        font-size: 15px;
+    }
+
+
+    .vectoryCard {
+        margin: 1rem 0rem ;
+        background-color: #FFFFFF;
+    }
+    .vectorifyStructure p a {
+        text-decoration: none;
+        color: var(--dark-blue);
+        font-weight: 700;
+        font-size: 16px;
+    }
+
+    .vectorifyStructure {
+        padding: 1rem;
+    }
+    .vectorifyStructure p {
+        font-size: 15px;
+    }
 
 }
 
