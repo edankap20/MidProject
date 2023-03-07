@@ -88,7 +88,189 @@ header section {
     .menu li a {
         color: white;
     }
+
+
+
+    .heroSection {
+        display: flex;
+        flex-direction: column;
+        padding: 3rem 3rem 3rem;
+        background-color: pink;
+    }
+
+    .contentHeroSection {
+        background-color: rgb(67, 119, 153);
+   
+    }
+
+    .contentHeroSection h1{
+        font-size: 35px;
+        line-height: 40px;
+    }
+
+
+    .rockParagraphs {
+        padding: 1rem 0rem 
+    }
+
+
+    .buttonGetInTouch {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        padding: 0
+    }
+
+    .getInTouch {
+        width: 140px;
+        height: 40px;
+        background-color: var(--dark-blue, blue);
+        border: none; 
+        color: white
+    }
+
+    .getInTouch a {
+        color: white
+    }
+    
+    
+
+
+    .imagesHeroSection {
+        position: relative;
+
+    }
+
+    .blueCard {
+        position: absolute;
+
+        top: 0;
+        left: -3rem;
+        max-width: 60%;  
+    }
+
+    .thumbCard {
+        position: absolute;
+        bottom: -5rem;
+        right: -3rem;
+        max-width: 60%;  
+    }
+
+    .personPicture {
+        max-width: 100%;
+    }
+
+
+
+
+
+    #clientSection {
+        display: flex;
+        padding: 1rem 3rem 3rem;
+        background-color: beige;
+    }
+
+    .imagesClients {
+        background-color: antiquewhite;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .airbnbLogo {
+        max-width: 25%;
+        justify-content: center;
+    }
+    .googleLogo {
+        max-width: 25%;
+    }
+    .microsoftLogo {
+        max-width: 25%;
+    }
+    .fedexLogo {
+        max-width: 25%;
+    }
+    .amazonLogo {
+        max-width: 25%;
+    }
+
+
+
+
+    #projectsSection {
+        display: flex;
+        flex-direction: column;
+        padding: 3rem 3rem 3rem;
+        background-color: pink;
+    }
+
+    #projectsSection section h2 {
+        font-size: 35px;
+        line-height: 40px;
+    }
+
+    .projects h3 {
+        font-size: 20px;
+    }
+    
+    .projects {
+        display:flex;
+        flex-wrap: wrap;
+    }
+
+
+    .projectLogo1 {
+        max-width: 100%;
+    }
+    .projectLogo2 {
+        max-width: 100%;
+    }
+    .projectLogo3 {
+        max-width: 100%;
+    }
+
+    .cardSimplify {
+        margin: 1rem 0rem ;
+        background-color: #FFFFFF;
+    }
+    .simplifyStructure p a {
+        text-decoration: none;
+        color: var(--dark-blue);
+        font-weight: 700;
+        font-size: 16px;
+    }
+    .learnMore {
+        padding-top: 2rem;
+    }
+    .simplifyStructure {
+        padding: 1rem;
+    }
+    .simplifyStructure p {
+        font-size: 15px;
+    }
+
+    .dashCoinCard {
+        margin: 1rem 0rem ;
+        background-color: #FFFFFF;
+    }
+    .dashCoinStructure p a {
+        text-decoration: none;
+        color: var(--dark-blue);
+        font-weight: 700;
+        font-size: 16px;
+    }
+
+    .dashCoinStructure {
+        padding: 1rem;
+    }
+
 }
+
+
+
+
 
 .contactUs {
     width: 150px;
