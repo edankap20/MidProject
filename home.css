@@ -67,7 +67,7 @@ header section {
         right: 0;
         bottom: 0;
         background-color: var(--dark-blue);
-        padding: 1rem;
+        padding: 2.5rem 1rem;
         box-shadow: 0 0 0 100vmax rgba(7,42,200, 0.3)
     }
 
@@ -104,6 +104,7 @@ header section {
     .contentHeroSection h1{
         font-size: 35px;
         line-height: 40px;
+        text-align: center;
     }
 
 
@@ -207,6 +208,7 @@ header section {
     #projectsSection section h2 {
         font-size: 35px;
         line-height: 40px;
+        text-align: center;
     }
 
     .projects h3 {
@@ -232,6 +234,7 @@ header section {
     .cardSimplify {
         margin: 1rem 0rem ;
         background-color: #FFFFFF;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.30))
     }
     .simplifyStructure p a {
         text-decoration: none;
@@ -241,6 +244,7 @@ header section {
     }
     .learnMore {
         padding-top: 2rem;
+        padding-bottom: 1rem;
     }
     .simplifyStructure {
         padding: 1rem;
@@ -252,6 +256,7 @@ header section {
     .dashCoinCard {
         margin: 1rem 0rem ;
         background-color: #FFFFFF;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.30))
     }
     .dashCoinStructure p a {
         text-decoration: none;
@@ -271,6 +276,7 @@ header section {
     .vectoryCard {
         margin: 1rem 0rem ;
         background-color: #FFFFFF;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.30))
     }
     .vectorifyStructure p a {
         text-decoration: none;
@@ -331,7 +337,7 @@ header section {
     }
 
     .clientPicture {
-        max-width: 15%;
+        max-width: 20%;
         border-radius: 70%;
     }
  
@@ -356,8 +362,7 @@ header section {
         color: white;
     }
 
-
-.emoji {
+    .emoji {
         height: 60px;
         width: 60px;
     }
@@ -370,6 +375,93 @@ header section {
     }
 
 
+
+    #servicesSection {
+        background-color: pink;
+        flex-direction: column;
+        padding: 3rem 3rem 3rem;
+
+    }
+
+    #servicesSection h2 {
+        font-size: 35px;
+        line-height: 40px;
+        text-align: center;
+    }
+
+    .services h3 {
+        font-size: 20px;
+        line-height: normal;
+    }
+
+    .serviceInterfaceCard {
+        margin: 1rem 0rem;
+        background-color: #FFFFFF;
+        padding: 2rem;   
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.30))     
+    }
+
+    .serviceExperienceCard {
+        margin: 2rem 0rem ;
+        background-color: #FFFFFF;
+        padding: 2rem;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.30))
+    }
+    .serviceDevelopmentCard {
+        margin: 2rem 0rem ;
+        background-color: #FFFFFF;
+        padding: 2rem;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.30))
+    }
+
+    .services p a {
+        text-decoration: none;
+        color: var(--dark-blue);
+        font-weight: 700;
+        font-size: 16px;
+        
+    }
+
+    #servicesSection .serviceParagraph {
+        padding-bottom: 3rem;
+        padding-top: 1rem;
+    }
+
+    .serviceLogo1 {
+        height: 60px;
+        width: 60px;
+        background-image: url(/Assets/ServicesSections/1.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 50%;
+        background-size: 30px;
+        background-color: var(--light-blue2);
+        margin-bottom: 1rem;
+    }
+
+        .serviceLogo2 {
+        height: 60px;
+        width: 60px;
+        background-image: url(/Assets/ServicesSections/2.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 50%;
+        background-size: 30px;
+        background-color: var(--light-blue2);
+        margin-bottom: 1rem;
+    }
+
+        .serviceLogo3 {
+        height: 60px;
+        width: 60px;
+        background-image: url(/Assets/ServicesSections/3.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 50%;
+        background-size: 30px;
+        background-color: var(--light-blue2);
+        margin-bottom: 1rem;
+    }
 }
 
 
