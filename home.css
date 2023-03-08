@@ -98,7 +98,7 @@ header section {
         display: flex;
         flex-direction: column;
         padding: 3rem 3rem 3rem;
-        background-color: pink;
+
     }
 
     .contentHeroSection h1{
@@ -109,7 +109,7 @@ header section {
 
 
     .rockParagraphs {
-        padding: 1rem 0rem 
+        padding: 2rem 0rem 
     }
 
 
@@ -119,6 +119,10 @@ header section {
         align-items: center;
         padding: 1rem;
         padding: 0
+    }
+
+    .buttonGetInTouch p {
+        font-weight: 700;
     }
 
     .getInTouch {
@@ -138,20 +142,21 @@ header section {
 
     .imagesHeroSection {
         position: relative;
+        padding-top: 4rem;
 
     }
 
     .blueCard {
         position: absolute;
 
-        top: 0;
+        top: 3rem;
         left: -3rem;
         max-width: 60%;  
     }
 
     .thumbCard {
         position: absolute;
-        bottom: -5rem;
+        bottom: -6rem;
         right: -3rem;
         max-width: 60%;  
     }
@@ -166,16 +171,17 @@ header section {
 
     #clientSection {
         display: flex;
-        padding: 1rem 3rem 3rem;
-        background-color: beige;
+        padding: 3rem 3rem 3rem;
+
     }
 
     .imagesClients {
-        background-color: antiquewhite;
+
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         gap: 1rem;
+        row-gap: 2rem;
     }
 
     .airbnbLogo {
@@ -202,7 +208,7 @@ header section {
         display: flex;
         flex-direction: column;
         padding: 3rem 3rem 3rem;
-        background-color: pink;
+
     }
 
     #projectsSection section h2 {
@@ -377,7 +383,7 @@ header section {
 
 
     #servicesSection {
-        background-color: pink;
+
         flex-direction: column;
         padding: 3rem 3rem 3rem;
 
@@ -462,6 +468,70 @@ header section {
         background-color: var(--light-blue2);
         margin-bottom: 1rem;
     }
+
+    #ctaSection {
+        background-color: var(--yellow);
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #ctaSection h2 {
+        font-size: 25px;
+        text-align: center;
+        line-height: normal;
+        color: var(--dark-grey)
+    }
+    #ctaSection p {
+        font-size: 15px;
+        color: var(--dark-grey);
+        text-align: center;
+    }
+
+    .containerSection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .emailLogo::placeholder {
+        background-image: url(/ProjectPage/NewsLetter/mail.svg);
+        background-size: 15px 15px;
+        background-repeat: no-repeat;
+        background-position: 0.5rem center;
+        color: var(--dark-grey);
+        padding-left: 30px;
+    }
+
+    .emailLogo::placeholder:focus {
+        outline: none;
+    }
+    .emailLogo {
+        border: none;
+        text-align:;
+
+    }
+
+    .questionTag {
+        padding: 0rem 0rem 1rem;
+    }
+
+    .containerSection form {
+        padding-top: 2rem;
+        display: flex;
+        gap: 0.5rem;
+        height: 70px;
+    }
+
+    .buttonCTA {
+        width: 140px;
+        height: 40px;
+        background-color: var(--dark-blue, blue);
+        border: none; 
+        color: white
+    }
+
 }
 
 
