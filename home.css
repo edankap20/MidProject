@@ -32,7 +32,7 @@ header section {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 3rem 3rem 0rem
+        padding: 2rem 3rem 0rem
     }
    
     .open-menu,
@@ -509,8 +509,6 @@ header section {
     }
     .emailLogo {
         border: none;
-        text-align:;
-
     }
 
     .questionTag {
@@ -532,9 +530,44 @@ header section {
         color: white
     }
 
+    .footerConteiner {
+        display: flex;
+        flex-direction: column-reverse;
+
+    }
+    .footerConteiner .content {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+
+    .content .circleLogo {
+        margin-bottom: 1rem;
+    }
+
+    .links {
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 2rem;
+        
+    }
+
+    .links li a {
+        text-decoration: none;
+        color: var(--dark-blue);
+        line-height: 2rem;
+
+    }
+
+    .upList, .buttomList {
+        list-style-type: none;
+        text-align: center;
+    }
 }
-
-
 
 
 
