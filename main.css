@@ -6,7 +6,10 @@
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     color: #514D67;
+
     box-sizing: border-box;
+    background-color: #E5E5E5;
+
 
     --dark-blue: #072AC8;
     --light-blue: #43D2FF;
