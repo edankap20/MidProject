@@ -6,12 +6,15 @@
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     color: #514D67;
-    background-color: #E5E5E5;;
+
+    box-sizing: border-box;
+    background-color: #E5E5E5;
+
 
     --dark-blue: #072AC8;
     --light-blue: #43D2FF;
     --light-blue1: #A2D6F9;
-    --ligth-blue2: #D1EDFF;
+    --light-blue2: #D1EDFF;
 
     --dark-grey: #292E47;
     --light-grey: #6B708D;
@@ -27,7 +30,7 @@ h1 {
     font-weight: 700;
     font-size: 60px;
     line-height: 70px;
-    background-color: var(--dark-blue, blue);
+    
 }
 
 h2 {
@@ -60,15 +63,13 @@ p.body-20 {
     line-height: 150%;
 }
 
-spam.headLine-17-Regular {
+span.headLine-17-Regular {
     font-weight: 400;
     font-size: 17px;
     line-height: 150%;
 }
 
-spam.headLine-17-Medium {
-    font-weight: 500;
-    font-size: 17px;
+span.headLine-17-Medium {
     line-height: 130%;
 }
 
