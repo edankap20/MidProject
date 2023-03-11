@@ -1284,6 +1284,7 @@
         display: flex;
         margin: 100px 100px 100px;
         justify-content: space-between;
+       
     }
 
 
@@ -1291,18 +1292,38 @@
     .airbnbLogo {
         max-width: 25%;
         justify-content: center;
+        filter: grayscale(1);
+    }
+    .airbnbLogo:hover {
+        filter: grayscale(0)
     }
     .googleLogo {
         max-width: 25%;
+        filter: grayscale(1);
+    }
+    .googleLogo:hover {
+        filter: grayscale(0)
     }
     .microsoftLogo {
         max-width: 25%;
+        filter: grayscale(1);
+    }
+    .microsoftLogo:hover {
+        filter: grayscale(0)
     }
     .fedexLogo {
         max-width: 25%;
+        filter: grayscale(1);
+    }
+    .fedexLogo:hover {
+        filter: grayscale(0)
     }
     .amazonLogo {
         max-width: 25%;
+        filter: grayscale(1);
+    }
+    .amazonLogo:hover {
+        filter: grayscale(0)
     }
 
 
