@@ -281,21 +281,117 @@
 
 
 
-    .projectSection {
+
+    #formSection {
         display: flex;
         flex-direction: column;
         padding: 3rem 3rem 3rem;
-
     }
 
-    .contentSection h1{
+    .title h1{
         font-size: 35px;
         line-height: 40px;
         text-align: center;
     }
 
 
+    .contactForm {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+    }
+    .fullName  {
+        margin-top: 3rem;
+    }
+    .fullName label {
+        color: var(--light-grey);
+        font-size: 17px;
+        font-weight: 400;
+    }
+    .fullName input {
+        width: 100%;
+        height: 30px;
+        border: none;
+        background-color: var(--light-grey1);
+    }
+    .fullName div {
+        margin-top: 0.5rem;
+    }
 
+
+    .email{
+        margin: 1rem 0rem  
+    }
+    .phone {
+        margin: 0.5rem 0rem  
+    }
+    .phone label {
+        color: var(--light-grey);
+        font-size: 17px;
+        font-weight: 400;
+    }
+    .email input {
+        width: 100%;
+        height: 30px;
+        border: none;
+        background-color: var(--light-grey1);
+    }
+    .email label {
+        color: var(--light-grey);
+        font-size: 17px;
+        font-weight: 400;
+    }
+    .email div {
+        margin-top: 0.5rem;
+    }
+    .phone label{
+        color: var(--light-grey);
+        font-size: 17px;
+        font-weight: 400;
+    }
+    .phone input {
+        width: 100%;
+        height: 30px;
+        border: none;
+        background-color: var(--light-grey1);
+    }
+    .phone div {
+        margin-top: 0.5rem;
+    }
+
+
+    .message{
+        margin: 0.5rem 0rem  
+    }
+    .message label {
+        color: var(--light-grey);
+        font-size: 17px;
+        font-weight: 400;
+    }
+    .message textarea{
+        width: 100%;
+        border: none;
+        background-color: var(--light-grey1);
+    }
+    .message div{
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+    }
+    #message::placeholder,
+    #phone::placeholder,
+    #email::placeholder,
+    #fullName::placeholder {
+        padding: 0.5rem 0.5rem;
+    }
+    .bottomSubmit {
+        width: 100%;
+        height: 50px;
+        background-color: var(--dark-blue);
+        border: none;
+        color: white;
+        font-size: 15px;
+        font-weight: 500;
+    }
 
 
 
@@ -399,26 +495,138 @@
     }
 
 
-    .projectSection {
+
+
+    #formSection {
         display: flex;
         flex-direction: column;
         margin: 150px 100px 100px;
-
     }
 
-    .contentSection h1{
+    .title h1{
         font-size: 60px;
         line-height: 70px;
         text-align: initial;
         font-weight: 700;
-        color: var(--dark-grey)
+        color: var(--dark-grey);
+    }
+
+
+    .contactForm {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+    }
+    .fullName  {
+        margin-top: 3rem;
+    }
+    .fullName label {
+        color: var(--light-grey);
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .fullName input {
+        width: 100%;
+        height: 70px;
+        border: none;
+        background-color: var(--light-grey1);
+    }
+    .fullName div {
+        margin-top: 0.5rem;
+    }
+
+
+    .emailAndPhone {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 2rem;
+        margin: 2rem 0;
+    }
+
+    .email{
+        width:50%;
+    }
+    .phone {
+        width:50%;
+    }
+    .phone label {
+        color: var(--light-grey);
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .email input {
+        width: 100%;
+        height: 70px;
+        border: none;
+        background-color: var(--light-grey1);
+    }
+    .email label {
+        color: var(--light-grey);
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .email div {
+        margin-top: 0.5rem;
+    }
+    .phone label{
+        color: var(--light-grey);
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .phone input {
+        width: 100%;
+        height: 70px;
+        border: none;
+        background-color: var(--light-grey1);
+    }
+    .phone div {
+        margin-top: 0.5rem;
+    }
+
+
+    .message{
+        margin-bottom: 2rem;
+    }
+    .message label {
+        color: var(--light-grey);
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .message textarea{
+        width: 100%;
+        border: none;
+        background-color: var(--light-grey1);
+        height: 200px;
+    }
+    .message div{
+        margin-top: 0.5rem;
+
+    }
+    #message::placeholder,
+    #phone::placeholder,
+    #email::placeholder,
+    #fullName::placeholder {
+        padding-left: 1rem;
+        font-size: 17;
+        color: var(--light-grey);
+        font-weight: 400;
+    }
+    #message::placeholder {
+        padding-top: 1rem;
+    }
+    .bottomSubmit {
+        width: 100%;
+        height: 70px;
+        background-color: var(--dark-blue);
+        border: none;
+        color: white;
+        font-size: 20px;
+        font-weight: 500;
     }
 
 
 
-
-
-
+    
     
     .footerConteiner {
         display: flex;
