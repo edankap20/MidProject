@@ -1257,14 +1257,14 @@
 
     .blueCard {
         position: absolute;
-        top: 0rem;
+        top: 2rem;
         left: -5rem;
         max-width: 70%;
     }
 
     .thumbCard {
         position: absolute;
-        bottom: 1rem;
+        bottom: 3rem;
         right: 0rem;
         max-width: 38%;
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.30));
