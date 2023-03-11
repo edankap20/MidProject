@@ -2,7 +2,7 @@ const nav = document.querySelector("#nav");
 const openMenu = document.querySelector("#menu-open");
 const closeMenu = document.querySelector("#menu-close");
 const navList = document.querySelector(".menu");
-
+const closeHamburguer = document.querySelector("#closeHamburguer")
 
 //creo un elemento nuevo li y a para "Contact Us"
 const newListItem = document.createElement("li");
@@ -35,3 +35,4 @@ closeHamburguer.addEventListener("click", () => {
     nav.classList.remove("visible");
 
 });
+
