@@ -35,3 +35,54 @@ closeHamburguer.addEventListener("click", () => {
     nav.classList.remove("visible");
 
 });
+
+// Para el servidor SERVER
+const SERVER_URL = 'http://localhost:8000/contacts';
+
+window.onload = () => {
+    console.log('ONLOAD');
+
+    function _handleBottomSubmit () {
+        console.log('_handleBottomSubmit')
+        const fullName = document.querySelector('#fullName').value;
+        const email = document.querySelector('#email').value;
+        const phone = document.querySelector('#phone').value;
+        const message = document.querySelector('#message').value;
+
+        //Creamos un objeto nuevo para poder enviarlo al JSON server con los valores que se escriban en el formulario
+        const newContact = {
+            fullName,
+            email,
+            phone,
+            message
+        };
+        console.log(newContact);
+
+        //Lamamos a la función privada _saveContactData
+        _saveContactData(newContact)
+
+    }
+
+    //Función que envia los datos anteriores al servidor mediante el método Fetch()
+    function _saveContactData (contact) {
+        fetch(SERVER_URL, {
+                method: 'POST',
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                },
+            body: JSON.stringify(contact)
+        })
+           .then(response => response.json())
+           .then(response => console.log(JSON.stringify(response)))
+           .catch(err => console.error(err));
+    }
+
+    function _bindEvents () {
+        const bottomSubmit = document.querySelector('.bottomSubmit');
+
+        bottomSubmit.addEventListener('click', _handleBottomSubmit)
+    }
+
+    _bindEvents ();
+}
