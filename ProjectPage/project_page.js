@@ -70,7 +70,7 @@ window.onload = () => {
         const logoBlur = document.querySelector(".projectLogoBlur")
         const logo = document.querySelector(".projectLogo")
 
-        projectTitleHeader.textContent = `${projectToShow.name} Johan`
+        projectTitleHeader.textContent = projectToShow.name
         projectSubtitle.textContent = projectToShow.description
         projectData.textContent = projectToShow.completed_on
         paragraph.textContent = projectToShow.content
