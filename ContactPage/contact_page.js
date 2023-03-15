@@ -43,13 +43,32 @@ window.onload = () => {
     console.log('ONLOAD');
 
     function _handleBottomSubmit () {
-        console.log('_handleBottomSubmit')
+        console.log('_handleBottomSubmit');
         const fullName = document.querySelector('#fullName').value;
         const email = document.querySelector('#email').value;
         const phone = document.querySelector('#phone').value;
         const message = document.querySelector('#message').value;
+    
+        // Validar que los campos requeridos no estén vacíos
+        if (fullName === '' || email === '' || phone === '') {
+            alert('Please fill in all required fields.');
+            return;
+        }
+    
+        // Validar que el correo electrónico tenga el formato correcto
+        const emailRegex = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/; // Expresión regular para validar correo electrónico
+        if (!emailRegex.test(email)) {
+            alert('Please enter a valid email address.');
+            return;
+        }
+    
+        // Validar que el número de teléfono tenga 9 dígitos
+        const phoneRegex = /^\d{9}$/; // Expresión regular para validar número de teléfono con 9 dígitos
+        if (!phoneRegex.test(phone)) {
+            alert('Please enter a valid phone number with 9 digits.');
+            return;
+        }
 
-        //Creamos un objeto nuevo para poder enviarlo al JSON server con los valores que se escriban en el formulario
         const newContact = {
             fullName,
             email,
@@ -58,14 +77,15 @@ window.onload = () => {
         };
         console.log(newContact);
 
-        //Lamamos a la función privada _saveContactData
         _saveContactData(newContact)
+            .then(() => {
+                _showSuccessMessage();
+            });
 
     }
 
-    //Función que envia los datos anteriores al servidor mediante el método Fetch()
     function _saveContactData (contact) {
-        fetch(SERVER_URL, {
+        return fetch(SERVER_URL, {
                 method: 'POST',
                 headers: {
                     'Accept': 'application/json',
@@ -78,11 +98,29 @@ window.onload = () => {
            .catch(err => console.error(err));
     }
 
+    function _showSuccessMessage() {
+        const alertElement = document.createElement('div');
+        alertElement.classList.add('alertMessage');
+        alertElement.innerHTML = 'Formulario enviado con éxito';
+        document.body.appendChild(alertElement);
+        setTimeout(() => {
+            alertElement.remove();
+        }, 3000);
+    }
+
     function _bindEvents () {
         const bottomSubmit = document.querySelector('.bottomSubmit');
 
-        bottomSubmit.addEventListener('click', _handleBottomSubmit)
+        bottomSubmit.addEventListener('click', _handleBottomSubmit);
+
+        document.addEventListener('click', function(event) {
+            const alertElement = document.querySelector('.alertMessage');
+            if (alertElement && event.target !== alertElement && !alertElement.contains(event.target)) {
+                alertElement.remove();
+            }
+        });
     }
 
     _bindEvents ();
 }
+

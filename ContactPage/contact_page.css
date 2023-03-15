@@ -187,6 +187,9 @@
         font-size: 15px;
         font-weight: 500;
     }
+    .alertMessage {
+        display: block
+    }
 
 
     .footerConteiner {
