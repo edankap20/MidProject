@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Roboto:100,300,700');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    color: #514D67;
+
+    box-sizing: border-box;
+
+
+    --dark-blue: #072AC8;
+    --light-blue: #43D2FF;
+    --light-blue1: #A2D6F9;
+    --light-blue2: #D1EDFF;
+
+    --dark-grey: #292E47;
+    --light-grey: #6B708D;
+    --light-grey1: #F2F4FC;
+    --ligth-grey2: #ECF7FF;
+
+    --yellow: #FFC600;
+}
+
+
+
+h1 {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 70px;
+    
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 59px;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
+}
+
+h4 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+p.body-24 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+p.body-20 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+}
+
+span.headLine-17-Regular {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 150%;
+}
+
+span.headLine-17-Medium {
+    line-height: 130%;
+}
+
+caption.regular-15 {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;   
+}
+
+caption.regular-13 {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;    
+}
