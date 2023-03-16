@@ -40,10 +40,9 @@ closeHamburguer.addEventListener("click", () => {
 const SERVER_URL = 'http://localhost:8000/contacts';
 
 window.onload = () => {
-    console.log('ONLOAD');
+    console.log('ONLOAD')
 
     function _handleBottomSubmit () {
-        console.log('_handleBottomSubmit');
         const fullName = document.querySelector('#fullName').value;
         const email = document.querySelector('#email').value;
         const phone = document.querySelector('#phone').value;
@@ -69,19 +68,18 @@ window.onload = () => {
             return;
         }
 
+        
+
         const newContact = {
             fullName,
             email,
             phone,
             message
-        };
+        }
         console.log(newContact);
 
-        _saveContactData(newContact)
-            .then(() => {
-                _showSuccessMessage();
-            });
 
+        _saveContactData(newContact)
     }
 
     function _saveContactData (contact) {
@@ -94,33 +92,19 @@ window.onload = () => {
             body: JSON.stringify(contact)
         })
            .then(response => response.json())
-           .then(response => console.log(JSON.stringify(response)))
-           .catch(err => console.error(err));
-    }
-
-    function _showSuccessMessage() {
-        const alertElement = document.createElement('div');
-        alertElement.classList.add('alertMessage');
-        alertElement.innerHTML = 'Formulario enviado con éxito';
-        document.body.appendChild(alertElement);
-        setTimeout(() => {
-            alertElement.remove();
-        }, 3000);
+           .then(response => {
+                console.log(JSON.stringify(response));
+                alert('Form submitted successfully');
+             })
+           .catch(err => console.error(err))
     }
 
     function _bindEvents () {
-        const bottomSubmit = document.querySelector('.bottomSubmit');
+        const bottomSubmit = document.querySelector('.bottomSubmit')
 
-        bottomSubmit.addEventListener('click', _handleBottomSubmit);
-
-        document.addEventListener('click', function(event) {
-            const alertElement = document.querySelector('.alertMessage');
-            if (alertElement && event.target !== alertElement && !alertElement.contains(event.target)) {
-                alertElement.remove();
-            }
-        });
+        bottomSubmit.addEventListener('click', _handleBottomSubmit)
     }
 
-    _bindEvents ();
+    _bindEvents ()
 }
 
