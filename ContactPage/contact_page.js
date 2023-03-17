@@ -49,7 +49,7 @@ window.onload = () => {
         const message = document.querySelector('#message').value;
     
         // Validar que los campos requeridos no estén vacíos
-        if (fullName === '' || email === '' || phone === '' || 'message' === '') {
+        if (fullName === '' || email === '' || phone === '' || message === '') {
             alert('Please fill in all required fields.');
             return;
         }
