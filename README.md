@@ -1,3 +1,4 @@
+
 # MidProject Ironhack
 
 ## Introdución
@@ -75,3 +76,4 @@ Envio de los datos del formulario a un base de datos.
 La validación del formulario en sí no fue tan fácil y tuve que aplicar el mismo procedimiento que para el botón _hamburguesa_ del menú de la versión móvil. Es decir, traer la variable en JS y aplicar una alerta para los inputs de "Full Name", "Email", "Phone", "Message".
 
 Además para no fue difícil enviar los datos al servidor ya que hubo un error a la hora de escribir el objeto en el archivo `db.json`.
+
